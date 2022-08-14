@@ -23,5 +23,11 @@ public class EmployeeService {
         return employeeRepo.save(employee);
     }
 
+    public List<Employee> findAllEmployees() {
+        return employeeRepo.findAll();
+    }
+
+    
+
 
 }
