@@ -18,7 +18,10 @@ public class EmployeeService {
         this.employeeRepo = employeeRepo;
     }
 
-    
+    public Employee addEmployee(Employee employee) {
+        employee.setEmployeeCode(UUID.randomUUID().toString());
+        return employeeRepo.save(employee);
+    }
 
 
 }
